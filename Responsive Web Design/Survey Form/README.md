@@ -73,3 +73,7 @@ Be sure to add `<link rel="stylesheet" href="styles.css">` in your HTML to link 
 - **Passed:** 42. You should have an input or button element with an `id` of `submit`.
 - **Passed:** 43. Your `#submit` should have a `type` of `submit`.
 - **Passed:** 44. Your `#submit` should be a descendant of `#survey-form`.
+
+<br />
+
+![alt text](image.png)
