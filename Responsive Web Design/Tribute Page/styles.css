@@ -3,14 +3,14 @@ body {
 }
 
 #img-div img {
-  width: 800px;
-  height: 500px;
-  display: block;
-  margin: 0 auto;
 }
 
-img {
+#image {
   max-width: 100%;
+  height: auto;
+  width: 800px;
+  display: block;
+  margin: 0 auto;
 }
 
 #img-div {
