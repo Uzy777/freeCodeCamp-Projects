@@ -1,0 +1,101 @@
+/* General Styles */
+body {
+  background-color: #f5f6f7;
+  color: #1b1b32;
+  font-family: "Helvetica", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #1b1b32;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+/* #navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    
+  } */
+
+/* nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+
+.nav-link {
+  color: #dfdfe2;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #f1be32;
+}
+
+main {
+  padding: 2rem;
+}
+
+section {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+header,
+section header {
+  text-align: center;
+}
+
+code {
+  background-color: #e0e0e0;
+  padding: 0.5rem;
+  border-radius: 4px;
+  display: block;
+  white-space: pre-wrap; /* Ensure the code wraps correctly */
+  margin: 1rem 0;
+}
+
+pre {
+  margin: 0;
+}
+
+li {
+  margin: 0.5rem 0;
+}
+
+footer {
+  background-color: #2a2a40;
+  color: #dfdfe2;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+  .nav-link {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  section {
+    padding: 0.5rem;
+  }
+}
