@@ -1,5 +1,7 @@
 # Build a Tribute Page
 
+For this project, you will build a tribute page for a subject of your choosing, fictional or real.
+
 **Objective:**  
 Build an app that is functionally similar to [this tribute page](https://tribute-page.freecodecamp.rocks). Do not copy this demo project.
 

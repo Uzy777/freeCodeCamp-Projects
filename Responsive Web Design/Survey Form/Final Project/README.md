@@ -1,5 +1,7 @@
 # Build a Survey Form
 
+For this project, you will build a survey form to collect data from your users.
+
 **Objective:**  
 Build an app that is functionally similar to [this survey form](https://survey-form.freecodecamp.rocks). Do not copy this demo project.
 

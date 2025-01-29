@@ -1,5 +1,7 @@
 # Build a Technical Documentation Page
 
+For this project, you will build a technical documentation page to serve as instruction or reference for a topic.
+
 **Objective:**  
 Build an app that is functionally similar to [this technical documentation page](https://technical-documentation-page.freecodecamp.rocks). Do not copy this demo project.
 
