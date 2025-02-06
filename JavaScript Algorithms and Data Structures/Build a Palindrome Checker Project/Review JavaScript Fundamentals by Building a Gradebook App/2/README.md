@@ -19,3 +19,5 @@ Complete the `getGrade` function that takes a number score as a parameter. Your 
 - Remember that you learned about conditional statements (`if`, `else if`, and `else`).
 - Remember that you learned about comparison operators (`>`, `<`, `>=`, `<=`, `===`).
 
+
+![alt text](image.png)
