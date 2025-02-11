@@ -2,3 +2,6 @@ Sometimes when you're coding a web application, you'll need to be able to accept
 
 In this practice project, you'll learn basic regular expressions, template literals, the `addEventListener()` method, and more.
 
+![alt text](image.png)
+
+![alt text](image-1.png)
