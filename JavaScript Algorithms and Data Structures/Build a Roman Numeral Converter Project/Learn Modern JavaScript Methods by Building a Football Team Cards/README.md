@@ -2,3 +2,8 @@ One common aspect of building web applications: processing datasets, and then ou
 
 This project will cover concepts like, default parameters, `Object.freeze()`, and reinforce your knowledge of the `switch` statement and `map()` method.
 
+![alt text](image.png)
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
