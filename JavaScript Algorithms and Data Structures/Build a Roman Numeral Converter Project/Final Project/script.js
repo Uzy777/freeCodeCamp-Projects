@@ -67,9 +67,20 @@ function anumeralType(e) {
 button.addEventListener("click", convertInput);
 
 function convertInput() {
-  let input = document.getElementById("number").value;
+  let input = parseInt(document.getElementById("number").value, 10);
 
   verdict.innerText = "";
+
+  if (input <= -1) {
+    verdict.innerText = "Please enter a number greater than or equal to 1";
+    return;
+  } else if (!input) {
+    verdict.innerText = "Please enter a valid number";
+    return;
+  } else if (input >= 4000) {
+    verdict.innerText = "Please enter a number less than or equal to 3999";
+    return;
+  }
 
   while (input !== 0) {
     // Arabic Numeral - 1000
@@ -126,15 +137,4 @@ function convertInput() {
       verdict.innerText += `${rnumeralType(12)}`; // Roman Numeral - I
     }
   }
-
-  // if (!input) {
-  //   verdict.innerText = "Please enter a valid number";
-  // } else if (input === -1){
-  //   verdict.innerText = "Please enter a number greater than or equal to 1";
-  // } else if (input >= 4000) {
-  //   verdict.innerText = "Please enter a number less than or equal to 3999";
-  // }
-  // else {
-  //   verdict.innerText = "BROKEN";
-  // }
 }
