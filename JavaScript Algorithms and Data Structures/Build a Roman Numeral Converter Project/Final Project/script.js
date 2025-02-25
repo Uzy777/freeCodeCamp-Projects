@@ -69,6 +69,8 @@ button.addEventListener("click", convertInput);
 function convertInput() {
   let input = document.getElementById("number").value;
 
+  verdict.innerText = "";
+
   while (input !== 0) {
     // Arabic Numeral - 1000
     if (input >= anumeralType(0)) {
