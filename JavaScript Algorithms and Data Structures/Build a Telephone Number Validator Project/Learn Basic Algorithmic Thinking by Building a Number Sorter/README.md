@@ -2,3 +2,8 @@ In computer science, there are fundamental sorting algorithms that all developer
 
 This project will help you understand the fundamental concepts behind these algorithms, and how you can apply them to sort numerical data in web applications.
 
+![alt text](image.png)
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
