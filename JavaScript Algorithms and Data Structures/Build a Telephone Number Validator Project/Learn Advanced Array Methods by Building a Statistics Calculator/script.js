@@ -1,10 +1,9 @@
 const getMean = (array) => array.reduce((acc, el) => acc + el, 0) / array.length;
 
-const testArr1 = [1, 2, 3, 4, 5];
-const testArr2 = [1, 2, 3, 4, 5, 6];
-
 const getMedian = (array) => {
-  const sorted = array.sort((a, b) => a - b);
+  const sorted = array.toSorted((a, b) => a - b);
+  const median = sorted.length % 2 === 0 ? getMean([sorted[sorted.length / 2], sorted[sorted.length / 2 - 1]]) : sorted[Math.floor(sorted.length / 2)];
+  return median;
 };
 
 const calculate = () => {
