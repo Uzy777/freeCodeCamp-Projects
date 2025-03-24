@@ -59,3 +59,4 @@ const calculate = () => {
   document.querySelector("#variance").textContent = variance;
   document.querySelector("#standardDeviation").textContent = standardDeviation;
 };
+
