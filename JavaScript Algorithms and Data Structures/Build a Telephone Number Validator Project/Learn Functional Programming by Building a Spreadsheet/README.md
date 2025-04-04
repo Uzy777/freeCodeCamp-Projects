@@ -4,3 +4,9 @@ In this spreadsheet application project, you'll learn about parsing and evaluati
 
 This project will cover concepts like the `map()`, `find()`, and `includes()` methods and the `parseInt()` function.
 
+![alt text](image.png)
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
+
