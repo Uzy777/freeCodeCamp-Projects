@@ -7,15 +7,16 @@ checkbtn.addEventListener("click", function () {
   if (userinput.value.trim() === "") {
     alert("Please provide a phone number");
   }
+  const regex = /^(\d{10}|1?[\s-]?(\(\d{3}\)|\d{3})[\s-]?\d{3}[\s-]?\d{4})$/;
+  if (regex.test(userinput.value.trim())) {
+    resultsdiv.innerText = `Valid US number: ${userinput.value}`;
+    resultsdiv.style.color = "green";
+  } else {
+    resultsdiv.innerText = `Invalid US number: ${userinput.value}`;
+    resultsdiv.style.color = "red";
+  }
 });
 
 clearbtn.addEventListener("click", function () {
-  console.log("test");
-  resultsdiv.innerText = "test";
-  console.log(resultsdiv.value);
+  resultsdiv.innerText = "";
 });
-
-// checkbtn.addEventListener("click", function () {
-//   userinput.value.trim() === /[1-9]/;
-//   resultsdiv.innerText = "Valid US number: 1 555-555-5555";
-// });
