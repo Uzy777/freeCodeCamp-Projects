@@ -60,6 +60,21 @@ const player = new Player();
 
 const animate = () => {
   requestAnimationFrame(animate);
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  player.update();
+
+  if (keys.rightKey.pressed && player.position.x < proportionalSize(400)) {
+    player.velocity.x = 5;
+  }
+};
+
+const keys = {
+  rightKey: {
+    pressed: false,
+  },
+  leftKey: {
+    pressed: false,
+  },
 };
 
 const startGame = () => {
