@@ -71,6 +71,29 @@ class Platform {
   }
 }
 
+class CheckPoint {
+  constructor(x, y, z) {
+    this.position = {
+      x,
+      y,
+    };
+    this.width = proportionalSize(40);
+    this.height = proportionalSize(70);
+    this.claimed = false;
+  }
+
+  draw() {
+    ctx.fillStyle = "#f1be32";
+    ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
+  }
+  claim() {
+    this.width = 0;
+    this.height = 0;
+    this.position.y = Infinity;
+    this.claimed = true;
+  }
+}
+
 const player = new Player();
 
 const platformPositions = [
@@ -89,6 +112,12 @@ const platformPositions = [
 ];
 
 const platforms = platformPositions.map((platform) => new Platform(platform.x, platform.y));
+
+const checkpointPositions = [
+  { x: 1170, y: proportionalSize(80), z: 1 },
+  { x: 2900, y: proportionalSize(330), z: 2 },
+  { x: 4800, y: proportionalSize(80), z: 3 },
+];
 
 const animate = () => {
   requestAnimationFrame(animate);
@@ -125,6 +154,23 @@ const animate = () => {
       player.position.x >= platform.position.x - player.width / 2,
       player.position.x <= platform.position.x + platform.width - player.width / 3,
     ];
+
+    if (collisionDetectionRules.every((rule) => rule)) {
+      player.velocity.y = 0;
+      return;
+    }
+
+    const platformDetectionRules = [
+      player.position.x >= platform.position.x - player.width / 2,
+      player.position.x <= platform.position.x + platform.width - player.width / 3,
+      player.position.y + player.height >= platform.position.y,
+      player.position.y <= platform.position.y + platform.height,
+    ];
+
+    if (platformDetectionRules.every((rule) => rule)) {
+      player.position.y = platform.position.y + player.height;
+      player.velocity.y = gravity;
+    }
   });
 };
 
