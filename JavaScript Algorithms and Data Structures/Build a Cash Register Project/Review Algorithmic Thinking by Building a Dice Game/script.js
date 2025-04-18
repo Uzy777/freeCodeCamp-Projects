@@ -30,7 +30,12 @@ const rollDice = () => {
 };
 
 rollDiceBtn.addEventListener("click", () => {
-  rollDice();
+  if (rolls === 3) {
+    alert("You have made three rolls this round. Please select a score.");
+  } else {
+    rolls++;
+    rollDice();
+  }
 });
 
 rulesBtn.addEventListener("click", () => {

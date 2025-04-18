@@ -36,6 +36,16 @@ rollDiceBtn.addEventListener("click", () => {
   }
 });
 
+rollDiceBtn.addEventListener("click", () => {
+  if (rolls < 3) {
+    rolls += 1;
+    console.log(rolls);
+    rollDice();
+  } else {
+    alert("You must select a score");
+  }
+});
+
 let rolls = 0;
 let score = 0;
 let round = 1;
