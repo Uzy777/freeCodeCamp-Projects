@@ -27,9 +27,13 @@ rulesBtn.addEventListener("click", () => {
 let diceValuesArr = [];
 
 rollDiceBtn.addEventListener("click", () => {
-  let roll = Math.floor(Math.random() * 6) + 1;
-  diceValuesArr.push(roll);
-  console.log(diceValuesArr);
+  diceValuesArr = [];
+  for (let i = 0; i < 5; i++) {
+    let roll = Math.floor(Math.random() * 6) + 1;
+    diceValuesArr.push(roll);
+    console.log(diceValuesArr);
+    listOfAllDice[i].textContent = diceValuesArr[i];
+  }
 });
 
 let rolls = 0;
