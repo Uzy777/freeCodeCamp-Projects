@@ -15,8 +15,12 @@ let isModalShowing = false;
 rulesBtn.addEventListener("click", () => {
   if (!isModalShowing) {
     isModalShowing = true;
+    rulesBtn.innerText = "Hide rules";
+    rulesContainer.style.display = "block";
   } else {
     isModalShowing = false;
+    rulesBtn.innerText = "Show rules";
+    rulesContainer.style.display = "none";
   }
 });
 
