@@ -36,11 +36,17 @@ rollDiceBtn.addEventListener("click", () => {
   }
 });
 
+function updateStats() {
+  rollsElement.textContent = rolls;
+  roundElement.textContent = round;
+}
+
 rollDiceBtn.addEventListener("click", () => {
   if (rolls < 3) {
     rolls += 1;
     console.log(rolls);
     rollDice();
+    updateStats();
   } else {
     alert("You must select a score");
   }
