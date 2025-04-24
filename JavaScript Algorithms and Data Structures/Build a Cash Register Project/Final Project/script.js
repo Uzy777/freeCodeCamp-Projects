@@ -80,21 +80,30 @@ const getChange = (changeDueElement, cid) => {
       }
     }
   } // end of for loop
+  console.log(totalCid);
 
   if (remainingChange > 0) {
     return { status: "INSUFFICIENT_FUNDS", change: [] };
   }
 
-  if (changeDueElement === 0.5 && totalCid === 0.5) {
-    return { status: "CLOSED", change: [["PENNY", 0.5]] };
+  // if (changeDueElement === 0.5 && totalCid === 0.5) {
+  //   return { status: "CLOSED", change: [["PENNY", 0.5]] };
+  // }
+
+  if (changeDueElement === totalCid) {
+    return { status: "CLOSED", change: cid };
   }
 
   return { status: "OPEN", change: changeArray };
 }; // end of getChange()
 
-const formatChange = (changeArray) => changeArray.map(([unit, amount]) => `${unit}: $${amount.toFixed(2)}`).join(" ");
+const formatChange = (changeArray) =>
+  changeArray
+    .filter(([unit, amount]) => amount > 0)
+    .map(([unit, amount]) => `${unit}: $${amount.toFixed(2)}`)
+    .join(" ");
 
-// console.log(formatChange(.5,cid));
+// console.log(formatChange(335.41,cid));
 
 //   console.log("test")
 //   if (cashElement.value < price) {
