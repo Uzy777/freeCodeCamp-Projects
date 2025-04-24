@@ -1,0 +1,20 @@
+#cash {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;}
+
+h1 {
+  text-align: center;
+  color: purple;
+}
+
+#purchase-btn {
+display: block;
+margin-right: auto;
+margin-left: auto;  background-color: orange;
+}
+
+
+p {
+  text-align: center;
+}
