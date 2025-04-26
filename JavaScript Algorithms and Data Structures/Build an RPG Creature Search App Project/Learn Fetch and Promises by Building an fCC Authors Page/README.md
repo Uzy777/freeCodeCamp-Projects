@@ -4,3 +4,7 @@ This freeCodeCamp authors page project will show you how to use the fetch method
 
 This project will also teach you how to paginate your data so you can load results in batches.
 
+![alt text](image-1.png)
+
+![alt text](image.png)
+
