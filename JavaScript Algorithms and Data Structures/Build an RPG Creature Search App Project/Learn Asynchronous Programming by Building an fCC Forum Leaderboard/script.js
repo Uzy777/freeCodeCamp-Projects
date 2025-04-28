@@ -74,7 +74,9 @@ const avatars = (posters, users) => {
   return posters.map((poster) => {
     const user = users.find((user) => user.id === poster.user_id);
     if (user) {
-
+      const avatar = user.avatar_template.replace(/{size}/, 30);
+      const userAvatarUrl = avatar.startsWith("/user_avatar/") ? avatarUrl.concat(avatar) : avatar;
+      return `<img src="${userAvatarUrl}" alt="${user.name}" />`;
     }
   });
 };
@@ -95,19 +97,11 @@ const showLatestPosts = (data) => {
   const { topic_list, users } = data;
   const { topics } = topic_list;
 
-  postsContainer.innerHTML = topics.map((item) => {
-    const {
-      id,
-      title,
-      views,
-      posts_count,
-      slug,
-      posters,
-      category_id,
-      bumped_at,
-    } = item;
+  postsContainer.innerHTML = topics
+    .map((item) => {
+      const { id, title, views, posts_count, slug, posters, category_id, bumped_at } = item;
 
-    return `
+      return `
     <tr>
       <td>
         <p class="post-title">${title}</p>
@@ -118,5 +112,6 @@ const showLatestPosts = (data) => {
       <td>${viewCount(views)}</td>
       <td>${timeAgo(bumped_at)}</td>
     </tr>`;
-  }).join("");
+    })
+    .join("");
 };
