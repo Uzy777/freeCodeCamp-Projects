@@ -5,6 +5,13 @@ const avatarUrl = "https://sea1.discourse-cdn.com/freecodecamp";
 
 const postsContainer = document.getElementById("posts-container");
 
+const timeAgo = (time) => {
+  const currentTime = new Date();
+  const lastPost = new Date(time);
+  
+  
+};
+
 const fetchData = async () => {
   try {
     const res = await fetch(forumLatest);
@@ -33,7 +40,16 @@ const showLatestPosts = (data) => {
       bumped_at,
     } = item;
 
-    return `<tr></tr>`;
-  })
+    return `
+    <tr>
+      <td>
+        <p class="post-title">${title}</p>
+      </td>
+      <td></td>
+      <td>${posts_count - 1}</td>
+      <td>${views}</td>
+      <td></td>
+    </tr>`;
+  }).join("");
 };
 
