@@ -7,6 +7,8 @@ const creatureId = document.getElementById("creature-id");
 const creatureWeight = document.getElementById("weight");
 const creatureHeight = document.getElementById("height");
 const creatureType = document.getElementById("types");
+const creatureSpecialName = document.getElementById("special-name");
+const creatureSpecialDescription = document.getElementById("special-description");
 const creatureHp = document.getElementById("hp");
 const creatureAttack = document.getElementById("attack");
 const creatureDefense = document.getElementById("defense");
@@ -52,11 +54,14 @@ searchBtn.addEventListener("click", function(){
     })
 
     .then(data => {
-      creatureName.innerText = JSON.stringify(data["name"]);
-      creatureId.innerText = JSON.stringify(data["id"]);
-      creatureWeight.innerText = JSON.stringify(data["weight"]);
-      creatureHeight.innerText = JSON.stringify(data["height"]);
+      creatureName.innerText = JSON.stringify(data["name"]).slice(1, -1);
+      creatureId.innerText = "#" + JSON.stringify(data["id"]);
+      creatureWeight.innerText = "Weight: " + JSON.stringify(data["weight"]);
+      creatureHeight.innerText = "Height: " + JSON.stringify(data["height"]);
       creatureType.innerText = JSON.stringify(data["types"]);
+
+      creatureSpecialName.innerText = JSON.stringify(data.special["name"]).slice(1, -1);
+      creatureSpecialDescription.innerText = JSON.stringify(data.special["description"]).slice(1, -1);
 
       const hpStat = data.stats.find(stat => stat.name === "hp")
       creatureHp.innerText = hpStat.base_stat;
