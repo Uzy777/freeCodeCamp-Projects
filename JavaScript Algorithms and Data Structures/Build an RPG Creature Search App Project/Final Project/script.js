@@ -58,7 +58,10 @@ searchBtn.addEventListener("click", function(){
       creatureId.innerText = "#" + JSON.stringify(data["id"]);
       creatureWeight.innerText = "Weight: " + JSON.stringify(data["weight"]);
       creatureHeight.innerText = "Height: " + JSON.stringify(data["height"]);
-      creatureType.innerText = JSON.stringify(data["types"]);
+      
+      const typeNames = data.types.map(type => type.name).join(" ");
+
+      creatureType.innerText = typeNames.toUpperCase();
 
       creatureSpecialName.innerText = JSON.stringify(data.special["name"]).slice(1, -1);
       creatureSpecialDescription.innerText = JSON.stringify(data.special["description"]).slice(1, -1);
