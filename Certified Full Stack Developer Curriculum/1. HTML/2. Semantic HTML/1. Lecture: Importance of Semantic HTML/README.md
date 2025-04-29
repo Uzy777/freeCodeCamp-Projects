@@ -1,0 +1,1 @@
+In these lecture videos, you will learn about semantic HTML and why you should care about it, semantic elements, how semantic HTML differs from presentational HTML, and more.
