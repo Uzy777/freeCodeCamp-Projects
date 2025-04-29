@@ -57,20 +57,35 @@ searchBtn.addEventListener("click", function(){
       creatureWeight.innerText = JSON.stringify(data["weight"]);
       creatureHeight.innerText = JSON.stringify(data["height"]);
       creatureType.innerText = JSON.stringify(data["types"]);
-      creatureHp.innerText = JSON.stringify(data["hp"]);
-      creatureAttack.innerText = JSON.stringify(data["attack"]);
-      creatureDefense.innerText = JSON.stringify(data["defense"]);
-      creatureSpecialAttack.innerText = JSON.stringify(data["special-attack"]);
-      creatureSpecialDefense.innerText = JSON.stringify(data["special-defense"]);
-      creatureSpeed.innerText = JSON.stringify(data["speed"]);
+
+      const hpStat = data.stats.find(stat => stat.name === "hp")
+      creatureHp.innerText = hpStat.base_stat;
+
+      const attackStat = data.stats.find(stat => stat.name === "attack")
+      creatureAttack.innerText = attackStat.base_stat;
+
+      const defenseStat = data.stats.find(stat => stat.name === "defense")
+      creatureDefense.innerText = defenseStat.base_stat;
+
+      const specialAttackStat = data.stats.find(stat => stat.name === "special-attack")
+      creatureSpecialAttack.innerText = specialAttackStat.base_stat;
+
+      const specialDefenseStat = data.stats.find(stat => stat.name === "special-defense")
+      creatureSpecialDefense.innerText = specialDefenseStat.base_stat;
+
+      const speedStat = data.stats.find(stat => stat.name === "speed")
+      creatureSpeed.innerText = speedStat.base_stat;
       
+      
+
       testP.innerText = JSON.stringify(data);
       
       console.log(JSON.stringify(data));
     })
 
     .catch(error => {
-      console.error("There was a problem with the fetch operation:", error)
+      alert("Creature not found")
+      // console.error("There was a problem with the fetch operation:", error)
     })
 
 
