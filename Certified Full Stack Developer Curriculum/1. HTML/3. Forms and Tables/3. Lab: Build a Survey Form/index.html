@@ -1,0 +1,38 @@
+<!DOCTYPE>
+<html>
+
+<head>
+
+<body>
+    <h1 id="title">Survey Form for Favourite Car</h1>
+    <p id="description">You want a cookie?</p>
+    <form id="survey-form">
+        <label id="name-label">Name</label>
+        <input id="name" type="text" placeholder="Enter your name" required />
+        <label id="email-label">Email</label>
+        <input id="email" type="email" placeholder="Enter your email" required />
+        <label id="number-label">Age</label>
+        <input id="number" type="number" min="8" max="100" placeholder="Enter your age" />
+
+        <label>Brand</label>
+        <select id="dropdown">
+            <option>Select an option</option>
+            <option>BMW</option>
+            <option>Toyota</option>
+        </select>
+
+        <label>How much do you like this car?</label>
+        <input type="radio" name="likeCar" value="love" />
+        <input type="radio" name="likeCar" value="like" />
+
+        <label>What colour do you like?</label>
+        <input type="checkbox" name="colour" value="red" />
+        <input type="checkbox" name="colour" value="blue" />
+
+        <textarea>Type something here!</textarea>
+        <input type="submit" id="submit" />
+    </form>
+</body>
+</head>
+
+</html>
