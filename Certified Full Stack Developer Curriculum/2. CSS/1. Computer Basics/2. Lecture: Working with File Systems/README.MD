@@ -1,0 +1,1 @@
+In these lecture videos, you will learn how to work with file and folder systems on your computers. You will learn how to create, move, and delete files and folders, the best practices for naming and organizing files and folders, and more.
