@@ -1,0 +1,1 @@
+The following lecture videos are all about CSS. You will learn what CSS is and its role on the web, a CSS rule and its anatomy, the three ways to write CSS and when to use each, inline and block elements, and many more.
