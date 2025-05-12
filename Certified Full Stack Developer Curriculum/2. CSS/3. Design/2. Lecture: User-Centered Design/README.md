@@ -1,0 +1,1 @@
+In these lecture videos, you will learn about best practices for designing user-facing features like dark mode, breadcrumbs, modal dialogs, and much more. You will also learn how to conduct user research, user requirements and testing.

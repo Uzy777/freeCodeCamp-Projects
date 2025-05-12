@@ -1,0 +1,1 @@
+In these lecture videos, you will learn about the fundamentals of user interface (UI) design. You will learn about the terms you need to know to communicate with designers, visual hierarchy, scaling, alignment, whitespace, and much more.
