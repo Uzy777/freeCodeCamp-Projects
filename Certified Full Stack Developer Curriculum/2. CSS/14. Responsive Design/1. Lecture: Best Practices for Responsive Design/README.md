@@ -1,0 +1,1 @@
+In these lecture videos, you will learn about the best practices for responsive web design, the roles concepts like grid, flexbox, media queries, and media breakpoints play in responsive design, and more.
