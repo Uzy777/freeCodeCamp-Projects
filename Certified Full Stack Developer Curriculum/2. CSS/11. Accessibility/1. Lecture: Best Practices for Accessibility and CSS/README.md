@@ -1,0 +1,1 @@
+In these lecture videos, you will learn about best practices for accessibility in CSS, and the tools for checking good color contrast on websites.
