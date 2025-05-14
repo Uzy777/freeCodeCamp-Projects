@@ -1,0 +1,1 @@
+In these lecture videos, you will learn how to use CSS positioning and floats. You will learn about `absolute`, `relative`, `fixed`, and `sticky` positioning. You will also use the `z-index` property.https://www.freecodecamp.org/learn/full-stack-developer/lecture-understanding-how-to-work-with-floats-and-positioning-in-css/what-are-common-use-cases-for-using-floats
