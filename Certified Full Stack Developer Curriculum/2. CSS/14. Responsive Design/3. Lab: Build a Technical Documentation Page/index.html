@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Python for Beginners</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <header>abc321.xyz</header>
+            <a class="nav-link" href="#Introduction_to_Python">Introduction to Python</a>
+            <a class="nav-link" href="#Python_Basics">Python Basics</a>
+            <a class="nav-link" href="#Data_Structures">Data Structures</a>
+            <a class="nav-link" href="#Functions">Functions</a>
+            <a class="nav-link" href="#Modules_and_Packages">Modules and Packages</a>
+        </nav>
+    </header>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction_to_Python">
+            <header>Introduction to Python</header>
+            <p>Python is a high-level, interpreted programming language known for its simplicity and readability. It is
+                widely
+                used for web development, data analysis, artificial intelligence, scientific computing, and more.</p>
+            <p>Python's syntax allows programmers to express concepts in fewer lines of code than possible in languages
+                such
+                as C++ or Java.</p>
+            <p>Here is an example of a simple Python program:</p>
+            <pre><code>
+print("Hello, World!")
+      </code></pre>
+            <li>Why Python?</li>
+            <li>History of Python</li>
+            <li>How to Install Python</li>
+        </section>
+
+        <section class="main-section" id="Python_Basics">
+            <header>Python Basics</header>
+            <p>Before diving into advanced topics, it's important to grasp the basics of Python. These include
+                understanding
+                variables, data types, and basic operations.</p>
+            <p>Variables in Python are created when you assign a value to them. For example:</p>
+            <pre><code>
+x = 5
+y = "Hello"
+      </code></pre>
+            <p>Python supports several data types such as integers, floats, strings, and booleans. Here's how you can
+                use
+                them:</p>
+            <pre><code>
+a = 10       # integer
+b = 3.14     # float
+c = "Hello"  # string
+d = True     # boolean
+      </code></pre>
+            <li>Variables</li>
+            <li>Data Types</li>
+            <li>Basic Operations</li>
+        </section>
+
+        <section class="main-section" id="Data_Structures">
+            <header>Data Structures</header>
+            <p>Python provides several built-in data structures such as lists, tuples, sets, and dictionaries. These
+                structures help you organize and manipulate data efficiently.</p>
+            <p>A list in Python is an ordered collection of elements that can be of different types. Here's an example:
+            </p>
+            <pre><code>
+my_list = [1, 2, 3, "apple", "banana"]
+print(my_list[0])  # Output: 1
+      </code></pre>
+            <p>Tuples are similar to lists but are immutable. You cannot modify them once they are created. For example:
+            </p>
+            <pre><code>
+my_tuple = (1, 2, 3)
+print(my_tuple[0])  # Output: 1
+      </code></pre>
+            <li>Lists</li>
+            <li>Tuples</li>
+            <li>Sets</li>
+            <li>Dictionaries</li>
+        </section>
+
+        <section class="main-section" id="Functions">
+            <header>Functions</header>
+            <p>Functions are blocks of reusable code that perform a specific task. They help in organizing code and
+                avoiding
+                repetition.</p>
+            <p>Here's an example of a simple function in Python:</p>
+            <pre><code>
+def greet(name):
+    return f"Hello, {name}!"
+    
+print(greet("Alice"))  # Output: Hello, Alice!
+      </code></pre>
+            <li>Defining Functions</li>
+            <li>Function Arguments</li>
+            <li>Return Values</li>
+        </section>
+
+        <section class="main-section" id="Modules_and_Packages">
+            <header>Modules and Packages</header>
+            <p>Modules and packages in Python allow you to organize your code into separate files and directories,
+                making it
+                easier to manage and reuse.</p>
+            <p>A module is simply a Python file with a .py extension that contains functions, classes, or variables. You
+                can
+                import a module using the import statement:</p>
+            <pre><code>
+import math
+print(math.sqrt(16))  # Output: 4.0
+      </code></pre>
+            <p>A package is a collection of modules in a directory that includes a special __init__.py file. Here's how
+                you
+                can create and use packages:</p>
+            <pre><code>
+# Directory structure:
+# mypackage/
+#     __init__.py
+#     module1.py
+#     module2.py
+
+# module1.py
+def foo():
+    print("foo")
+
+# Using the package
+from mypackage import module1
+module1.foo()  # Output: foo
+      </code></pre>
+            <li>Importing Modules</li>
+            <li>Creating Packages</li>
+            <li>Using Packages</li>
+        </section>
+    </main>
+</body>
+
+</html>
