@@ -1,0 +1,1 @@
+In the following lecture videos, you will learn how to work with data types in JavaScript. You will also learn how dynamic typing differs from static typing, the `typeof` operator, and the `typeof null` bug.

@@ -1,0 +1,1 @@
+In these lecture videos, you will learn how to work with strings in JavaScript. You will learn how to access characters from a string, how to use template literals and interpolation, how to create a new line in strings, and much more.

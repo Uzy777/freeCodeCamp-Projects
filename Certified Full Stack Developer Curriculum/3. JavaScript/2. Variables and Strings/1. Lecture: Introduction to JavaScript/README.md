@@ -1,0 +1,1 @@
+In these lecture videos, you will learn the fundamentals of JavaScript. Topics covered include, but are not limited to, variables, data types, how JavaScript interacts with HTML and CSS, strings, and much more.

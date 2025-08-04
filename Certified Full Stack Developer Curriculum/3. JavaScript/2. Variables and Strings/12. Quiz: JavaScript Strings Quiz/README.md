@@ -1,0 +1,1 @@
+Test your knowledge of JavaScript strings with this quiz.

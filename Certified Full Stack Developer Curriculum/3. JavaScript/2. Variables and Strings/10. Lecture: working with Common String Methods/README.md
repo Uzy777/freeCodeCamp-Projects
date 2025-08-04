@@ -1,0 +1,1 @@
+In these lecture videos, you will learn about the common string methods available in JavaScript. The string methods will let you do things like extracting a part of a string, changing the casing for a string, replacing a part of a string, trimming whitespace from a string, and much more.
