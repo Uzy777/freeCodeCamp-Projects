@@ -1,0 +1,1 @@
+In these lecture videos, you will learn about the array methods for performing more advanced operations like getting the position of an item in an array, checking if an array contains a certain element, copying an array, and lots more.

@@ -1,0 +1,1 @@
+In these lecture videos, you will learn how to work with JavaScript arrays. You will learn about what makes an array, one-dimensional and two-dimensional arrays, how to access and update the elements in an array, and much more.
