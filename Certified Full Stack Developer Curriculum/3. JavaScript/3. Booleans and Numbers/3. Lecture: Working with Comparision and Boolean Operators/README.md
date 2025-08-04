@@ -1,0 +1,1 @@
+In these lectures you will learn about booleans, and equality and inequality operators, and other comparison operators.
