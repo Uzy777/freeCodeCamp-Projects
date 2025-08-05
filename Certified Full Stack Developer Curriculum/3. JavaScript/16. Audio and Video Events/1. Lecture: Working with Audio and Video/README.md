@@ -1,0 +1,1 @@
+In these lecture videos, you will learn how to work with audio and video files using JavaScript. You will learn about the `Audio` and `Video` constructors, their methods and properties, audio and video formats, codecs, the `HTMLMediaElement` API, and much more.
