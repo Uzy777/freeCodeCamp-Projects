@@ -1,0 +1,1 @@
+In these lecture videos, you will learn more about the core JavaScript fundamentals. You will learn how a string object differs from a primitive string, the `toString()` method, conventions and common practices for naming variables, linters and formatters, closures, and much more.

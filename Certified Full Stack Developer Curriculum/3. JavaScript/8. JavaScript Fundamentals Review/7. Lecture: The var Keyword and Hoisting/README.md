@@ -1,0 +1,1 @@
+In these lecture videos, you will learn about the `var` keyword and why it is not recommended for use anymore. You will also learn about hoisting in JavaScript so you can avoid subtle bugs in your code.
