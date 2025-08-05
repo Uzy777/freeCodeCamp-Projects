@@ -1,0 +1,1 @@
+In this lab, you'll use DOM manipulation, object destructuring, event handling, and data filtering to build a set of football team cards.

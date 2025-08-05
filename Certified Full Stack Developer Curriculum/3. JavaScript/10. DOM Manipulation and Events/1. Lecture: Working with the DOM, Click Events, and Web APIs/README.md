@@ -1,0 +1,1 @@
+In these lecture videos, you will learn how to work with the Document Object Model (DOM), the `addEventListener()` method and events, and web APIs.

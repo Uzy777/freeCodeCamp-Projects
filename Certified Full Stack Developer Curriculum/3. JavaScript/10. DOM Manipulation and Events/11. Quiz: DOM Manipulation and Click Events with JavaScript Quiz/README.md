@@ -1,0 +1,1 @@
+Test your knowledge of DOM manipulation and click events in JavaScript with this quiz.

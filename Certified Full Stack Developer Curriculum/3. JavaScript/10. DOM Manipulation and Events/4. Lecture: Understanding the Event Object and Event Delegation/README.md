@@ -1,0 +1,1 @@
+In these lecture videos, you will learn about the event object, the change event, event bubbling, and event delegation.
