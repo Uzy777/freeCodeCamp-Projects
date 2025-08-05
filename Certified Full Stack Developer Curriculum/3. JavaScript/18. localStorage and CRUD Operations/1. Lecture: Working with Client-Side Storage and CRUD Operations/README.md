@@ -1,0 +1,1 @@
+In these lecture videos, you will learn about client-side storage and CRUD operations in JavaScript. You will learn about `localStorage` and `sessionStorage` alongside their methods and properties, cookies, the Cache API, IndexDB, and much more.
