@@ -1,0 +1,1 @@
+In these lecture videos, you will learn about the JavaScript date object. You will learn about the methods for working with dates and how to format dates.
