@@ -1,0 +1,1 @@
+In these lecture videos, you will learn about the common errors in JavaScript and the techniques you can use to fix them – a process called debugging.

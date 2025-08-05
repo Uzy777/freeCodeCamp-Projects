@@ -1,0 +1,1 @@
+In this lab, you'll debug a random background color changer and fix the errors to make it work properly.
