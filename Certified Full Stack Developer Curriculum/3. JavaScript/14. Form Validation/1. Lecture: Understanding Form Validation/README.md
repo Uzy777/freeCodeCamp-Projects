@@ -1,0 +1,1 @@
+In these lecture videos, you will learn about form validation in JavaScript. You will learn about the various ways to validate forms, how the `preventDefault()` method works, and how the submit event works.
