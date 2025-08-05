@@ -1,0 +1,1 @@
+Test your knowledge of JavaScript higher order functions with this quiz.
