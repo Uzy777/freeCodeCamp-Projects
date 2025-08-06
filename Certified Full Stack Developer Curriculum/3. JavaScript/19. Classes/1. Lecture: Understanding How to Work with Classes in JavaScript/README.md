@@ -1,0 +1,1 @@
+In these lectures, you will learn about classes in JavaScript. You will learn about inheritance, the `this` keyword, static properties and methods, and more.

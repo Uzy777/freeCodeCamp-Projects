@@ -1,0 +1,1 @@
+In this lab, you'll build a simple transaction management system for a bank account.
