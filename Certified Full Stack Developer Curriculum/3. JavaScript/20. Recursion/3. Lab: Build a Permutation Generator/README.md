@@ -1,0 +1,1 @@
+For this lab, you'll build a permutation generator that produces all possible permutations of a given string.
