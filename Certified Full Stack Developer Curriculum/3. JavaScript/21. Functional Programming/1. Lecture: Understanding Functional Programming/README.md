@@ -1,0 +1,1 @@
+In these lectures, you will learn about functional programming and how to nest functions using a technique called currying.

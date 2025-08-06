@@ -1,0 +1,1 @@
+For this lab, you'll use JavaScript to visualize the steps that the Bubble Sort algorithm takes to reorder an array of integers.
