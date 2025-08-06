@@ -1,0 +1,1 @@
+For this lab you'll practice asynchronous JavaScript by coding your own freeCodeCamp forum leaderboard.

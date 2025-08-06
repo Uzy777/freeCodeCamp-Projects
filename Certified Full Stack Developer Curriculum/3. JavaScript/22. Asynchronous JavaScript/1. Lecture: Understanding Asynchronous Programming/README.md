@@ -1,0 +1,1 @@
+In these lectures, you will learn about asynchronous programming in JavaScript. You will learn about the differences between synchronous and asynchronous programming, how the `async` keyword works, the `Fetch` API, promises, `async/await`, the `Geolocation` API, and much more.
