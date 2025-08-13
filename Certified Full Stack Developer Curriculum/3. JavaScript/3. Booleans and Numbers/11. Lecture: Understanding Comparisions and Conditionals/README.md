@@ -1,1 +1,0 @@
-In these lecture videos, you will learn about comparison operators and conditionals. You will learn how the various conditionals differ from one another, and how comparisons work with `null` and `undefined`.
