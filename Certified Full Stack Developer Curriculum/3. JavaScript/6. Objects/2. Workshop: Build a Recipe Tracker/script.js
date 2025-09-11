@@ -60,3 +60,16 @@ console.log(recipe1TotalIngredients);
 const recipe1DifficultyLevel = getDifficultyLevel(recipe1.cookingTime);
 console.log(recipe1DifficultyLevel);
 
+recipe1.averageRating = getAverageRating(recipe1.ratings);
+recipe1.totalIngredients = getTotalIngredients(recipe1.ingredients)
+recipe1.difficultyLevel = getDifficultyLevel(recipe1.cookingTime)
+
+recipe2.averageRating = getAverageRating(recipe2.ratings);
+recipe2.totalIngredients = getTotalIngredients(recipe2.ingredients);
+recipe2.difficultyLevel = getDifficultyLevel(recipe2.cookingTime);
+
+recipe3.averageRating = getAverageRating(recipe3.ratings);
+recipe3.totalIngredients = getTotalIngredients(recipe3.ingredients)
+recipe3.difficultyLevel = getDifficultyLevel(recipe3.cookingTime)
+
+console.log(recipes);
