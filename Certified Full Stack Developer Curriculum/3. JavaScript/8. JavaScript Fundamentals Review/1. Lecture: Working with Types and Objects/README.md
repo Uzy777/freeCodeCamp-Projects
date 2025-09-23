@@ -1,0 +1,1 @@
+In these lectures you will learn about string objects, the `toString()` method, the `Number` constructor and more.

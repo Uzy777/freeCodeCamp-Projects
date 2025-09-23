@@ -1,0 +1,1 @@
+In these lectures you will learn about common practices for naming variables and functions, and how to work with arrays.
