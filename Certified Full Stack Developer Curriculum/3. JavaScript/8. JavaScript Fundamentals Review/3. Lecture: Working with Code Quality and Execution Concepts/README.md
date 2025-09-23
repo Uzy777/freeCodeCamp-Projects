@@ -1,0 +1,1 @@
+In these lectures you will learn what are linters and formatters, what is memory management, and closures.
