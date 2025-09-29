@@ -1,0 +1,1 @@
+In this lab, you will create a function that removes all falsy values from an array.
