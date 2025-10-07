@@ -12,16 +12,16 @@ return -1;
 }
 
 
-function addProduct(productName, quantity) {
-  let lowerName = productName.toLowerCase();
+function addProduct(product) {
+  let lowerName = product.name.toLowerCase();
   let index = findProductIndex(lowerName);
 
   if (index !== -1) {
-    inventory[index].quantity += quantity;
+    inventory[index].quantity += product.quantity;
     console.log(`${lowerName} quantity updated`);
   } else {
-    inventory.push({ name: lowerName, quantity: quantity });
-    console.log(`${lowerName} added to inventory`)
+    inventory.push({ name: lowerName, quantity: product.quantity });
+    console.log(`${lowerName} added to inventory`);
   }
 }
 
