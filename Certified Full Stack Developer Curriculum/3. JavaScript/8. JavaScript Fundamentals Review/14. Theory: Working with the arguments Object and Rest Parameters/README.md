@@ -1,0 +1,1 @@
+In these lessons, you will learn how to work with the `arguments` object and rest parameter syntax.
