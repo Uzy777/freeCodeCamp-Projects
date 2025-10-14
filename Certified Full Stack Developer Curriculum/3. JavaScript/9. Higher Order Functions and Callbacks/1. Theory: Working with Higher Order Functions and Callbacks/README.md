@@ -1,0 +1,1 @@
+In these lecture videos, you will learn how to work with higher order functions and callbacks. The higher order functions you will learn include `map()`, `filter()`, `reduce()`, `sort()`, `every()`, and `some()`. You will also learn how to chain these methods together to achieve your desired results.
