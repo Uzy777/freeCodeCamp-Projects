@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Checkout Page</title>
+</head>
+<body>
+  <h1>Checkout</h1>
+
+  <section>
+    <h2>Your Cart</h2>
+    <img src="https://cdn.freecodecamp.org/curriculum/labs/cube.jpg" alt="rubiks-cube">
+  </section>
+
+  <section>
+    <h2>Payment Information</h2>
+    <form>
+      <label for="card-name">
+        Card Holder Name: <span aria-hidden="true">*</span>
+      </label>
+      <input type="text" aria-required="true" id="card-name" name="card-name" required>
+      <br>
+
+      <label for="card-number">
+        Card Number: <span aria-hidden="true">*</span>
+      </label>
+      <input type="text" aria-required="true" id="card-number" name="card-number" required aria-describedby="card-number-help">
+      <p id="card-number-help">Enter your 16-digit card number (numbers only, no spaces).</p>
+      <br>
+
+      <label for="expiry-date">
+        Expiry Date: <span aria-hidden="true">*</span>
+      </label>
+      <input type="month" id="expiry-date" name="expiry-date" required>
+      <br>
+
+      <label for="cvv">
+        CVV: <span aria-hidden="true">*</span>
+      </label>
+      <input type="password" id="cvv" name="cvv" required>
+      <br>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+</body>
+</html>
