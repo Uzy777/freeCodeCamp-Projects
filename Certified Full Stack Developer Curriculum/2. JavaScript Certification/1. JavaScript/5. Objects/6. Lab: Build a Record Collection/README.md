@@ -1,0 +1,1 @@
+In this lab you will build a function to manage a record collection.
