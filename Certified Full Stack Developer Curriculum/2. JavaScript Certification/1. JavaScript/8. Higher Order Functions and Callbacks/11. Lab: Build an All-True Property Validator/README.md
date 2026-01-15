@@ -1,0 +1,1 @@
+In this lab you will build a function that checks if all objects in an array have a truthy value for a specific property.
