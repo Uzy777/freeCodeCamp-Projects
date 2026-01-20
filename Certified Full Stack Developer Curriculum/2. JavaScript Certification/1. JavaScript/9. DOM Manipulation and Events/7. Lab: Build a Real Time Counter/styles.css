@@ -1,0 +1,22 @@
+body {
+    font-family: system-ui, Arial, sans-serif;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+#text-input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.75rem;
+    font-size: 1rem;
+}
+
+#char-count {
+    margin-top: 0.5rem;
+    font-weight: 600;
+}
+
+#char-count.maxed {
+    color: red;
+}
