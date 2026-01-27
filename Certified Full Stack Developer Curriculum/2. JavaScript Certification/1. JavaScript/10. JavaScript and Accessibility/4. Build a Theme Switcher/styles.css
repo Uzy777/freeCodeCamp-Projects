@@ -1,0 +1,37 @@
+.theme-light {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --accent: #f0c419;
+}
+
+.theme-dark {
+    --bg: #121212;
+    --fg: #eaeaea;
+    --accent: #6aa0ff;
+}
+
+body {
+    background: var(--bg, #fff);
+    color: var(--fg, #000);
+}
+
+#theme-dropdown[hidden] {
+    display: none;
+}
+
+#theme-dropdown {
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    width: fit-content;
+    padding: 0.25rem 0.5rem;
+    list-style: none;
+}
+
+#theme-dropdown li {
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+}
+
+#theme-dropdown li:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
