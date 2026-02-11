@@ -1,0 +1,25 @@
+body {
+    background-color: grey;
+    text-align: center;
+
+}
+
+#drum-machine {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pad-bank {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+button {
+    height: 50px;
+    width: 50px;
+}
