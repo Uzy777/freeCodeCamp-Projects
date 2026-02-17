@@ -63,3 +63,14 @@ const displayCatalog = () => {
     })
     return catalogString
 }
+const displayPlantsSet = () => {
+    const commonNames = [];
+
+    for (const plant of catalog.keys()) {
+        commonNames.push(plant.commonName);
+    }
+
+    return new Set(commonNames);
+};
+const plantsSet = displayPlantsSet();
+console.log(plantsSet);
