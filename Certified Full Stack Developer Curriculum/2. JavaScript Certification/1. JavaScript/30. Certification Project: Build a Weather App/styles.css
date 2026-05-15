@@ -1,3 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Dropdown + button */
+#cities,
+#get-weather-btn {
+    padding: 10px;
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+/* Button styling */
+#get-weather-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#get-weather-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Weather icon */
 #weather-icon {
-  /* height: 100px; */
+    display: block;
+    margin: 15px auto;
+    width: 80px;
+}
+
+/* Labels */
+p {
+    margin: 5px 0;
+}
+
+#main-temperature,
+#feels-like,
+#humidity,
+#wind,
+#wind-gust,
+#weather-main,
+#location {
+    font-weight: bold;
+    margin-bottom: 10px;
 }

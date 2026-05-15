@@ -1,5 +1,4 @@
 const selectCity = document.getElementById("cities");
-
 const getWeatherBtn = document.getElementById("get-weather-btn");
 
 // Weather Elements
@@ -12,75 +11,45 @@ const windGustElement = document.getElementById("wind-gust");
 const weatherMainElement = document.getElementById("weather-main");
 const locationElement = document.getElementById("location");
 
-
-// const getWeather = () => {
-//   if (selectCity.value === "") {
-//     return
-//   } else {
-
-
-
-//   console.log(`Selected: ${selectCity.value}`)
-//   }
-// }
-
 async function getWeather(city) {
-    if (!city)
-        return null;
+    try {
+        const url = `https://weather-proxy.freecodecamp.rocks/api/city/${city}`;
+        const response = await fetch(url);
 
+        if (!response.ok) {
+            throw new Error(`Response status: ${response.status}`);
+        }
 
-    const url = `https://weather-proxy.freecodecamp.rocks/api/city/${city}`
-
-
-    const response = await fetch(url);
-    if (!response.ok) {
-        throw new Error(`Response status: ${response.status}`);
+        return await response.json();
+    } catch (error) {
+        console.log(error);
+        return undefined;
     }
-
-    const result = await response.json();
-    return result;
-
 }
 
-
-
-
-
 async function showWeather(city) {
-    try {
-        const data = await getWeather(city);
+    if (!city) return;
 
-        if (!data) return;
+    const data = await getWeather(city);
 
-        weatherIconElement.src = data.weather?.[0]?.icon;
-
-        mainTemperatureElement.innerHTML = data.main.temp;
-
-        feelsLikeElement.innerHTML = data.main.feels_like;
-
-        humidityElement.innerHTML = data.main.humidity;
-
-        windElement.innerHTML = data.wind.speed;
-
-        windGustElement.innerHTML = data.wind.deg;
-
-        weatherMainElement.innerHTML = data.weather?.[0]?.main;
-
-        locationElement.innerHTML = data.name;
-
-
-        console.log(iconUrl)
-
-
-
+    if (!data) {
+        alert("Something went wrong, please try again later.");
+        return;
     }
 
-    catch (error) {
-        alert("Something went wrong, please try again later");
-    }
+    weatherIconElement.src = data.weather?.[0]?.icon ?? "";
+    weatherIconElement.alt = data.weather?.[0]?.description ?? "N/A";
+
+    mainTemperatureElement.textContent = data.main?.temp ?? "N/A";
+    feelsLikeElement.textContent = data.main?.feels_like ?? "N/A";
+    humidityElement.textContent = data.main?.humidity ?? "N/A";
+    windElement.textContent = data.wind?.speed ?? "N/A";
+    windGustElement.textContent = data.wind?.gust ?? "N/A";
+
+    weatherMainElement.textContent = data.weather?.[0]?.main ?? "N/A";
+    locationElement.textContent = data.name ?? "N/A";
 }
 
 getWeatherBtn.addEventListener("click", () => {
-    showWeather(selectCity.value)
+    showWeather(selectCity.value);
 });
-
