@@ -1,0 +1,35 @@
+footer {
+    background-color: #be95be;
+    padding: 20px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-around;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+    margin-bottom: 8px;
+}
+
+a {
+    font-size: 36px;
+    text-decoration: none;
+}
+
+p {
+    text-align: center;
+}
+
+#icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
