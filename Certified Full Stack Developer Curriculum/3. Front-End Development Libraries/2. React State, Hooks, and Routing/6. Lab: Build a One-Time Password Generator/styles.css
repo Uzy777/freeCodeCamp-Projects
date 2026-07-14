@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 24px;
+    background: white;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#otp-title {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#otp-display {
+    min-height: 40px;
+    color: #2563eb;
+    margin-bottom: 16px;
+}
+
+#otp-timer {
+    min-height: 24px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+#generate-otp-button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#generate-otp-button:hover {
+    background-color: #1d4ed8;
+}
+
+#generate-otp-button:disabled {
+    background-color: #9ca3af;
+    cursor: not-allowed;
+}
